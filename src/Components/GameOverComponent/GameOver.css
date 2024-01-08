@@ -1,0 +1,16 @@
+.losingText{
+    font-size: 45px;
+    color: rgb(177, 62, 62);
+    background-color: white;
+}
+.winningText{
+    font-size: 45px;
+    color: rgb(69, 177, 69);
+    background-color: white;
+}
+
+.functionButtons{
+    background-color: white;
+    gap: 20px;
+    display: flex;
+}

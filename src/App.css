@@ -1,0 +1,19 @@
+.memoryplane{
+  width:60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+  background-color: black;
+}
+.gamecontent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scoretext{
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
