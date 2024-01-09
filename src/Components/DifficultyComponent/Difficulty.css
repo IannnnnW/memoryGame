@@ -25,3 +25,10 @@
 .logo{
     height: 250px;
 }
+
+@media screen and (max-width: 667px) {
+    .difficultyplane{
+        font-size: 80px;
+        padding: 15px;
+    }
+}

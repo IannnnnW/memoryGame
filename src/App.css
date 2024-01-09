@@ -17,3 +17,9 @@
   color: white;
   text-align: center;
 }
+@media screen and (max-width: 667px) {
+  .memoryplane{
+    grid-template-columns: repeat(2, 1fr);
+    height: 90vh;
+  }
+}
