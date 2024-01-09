@@ -4,7 +4,7 @@ import './Card.css'
 function Card({image, id, onCardClick}){
     return (
         <div className="memorycard" onClick={()=>onCardClick(id)}>
-            <img src={image}/>
+            <img src={image} className="image"/>
         </div>
     )
 }

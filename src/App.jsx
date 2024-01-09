@@ -40,7 +40,7 @@ function App() {
       const updatedEmojis = (emojis.map(emoji => {
         if(emoji.id === id){
           !emoji.is_clicked ? 
-          (setScore(score + 1), score == highScore ? (setHighScore(highScore + 1)) : null, (score == emojiNumber ? setGameOver(true) : null)) : 
+          (setScore(score + 1), score == highScore ? (setHighScore(highScore + 1)) : null) : 
           ((setGameOver(true)))
           return{
             ...emoji,
@@ -73,7 +73,7 @@ function App() {
           <div className="memoryplane">
             {emojis.map(emoji => <Card image={emoji.images.fixed_height_small.url} key={emoji.id} id={emoji.id} onCardClick={handleCardClick}/>)}
           </div>
-          <GameOver isOpen={isGameOver} resetFunction={handleResetCall} score={score} emojiCount={emojiNumber} changeLevel={setToLevelSelect}/>
+          <GameOver isOpen={isGameOver || score == emojiNumber} resetFunction={handleResetCall} score={score} emojiCount={emojiNumber} changeLevel={setToLevelSelect}/>
         </div>
       )
     }

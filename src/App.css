@@ -20,6 +20,7 @@
 @media screen and (max-width: 667px) {
   .memoryplane{
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
     height: 90vh;
   }
 }
