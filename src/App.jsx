@@ -16,7 +16,7 @@ function App() {
 
     useEffect(()=>{
       function fetchData(){
-      fetch(`https://api.giphy.com/v2/emoji?api_key=${import.meta.env.VITE_API_KEY}&limit=${emojiNumber}&offset=0`)
+      fetch(`https://api.giphy.com/v2/emoji?api_key=${{ secrets.API_KEY }}&limit=${emojiNumber}&offset=0`)
       .then(response => response.json())
       .then(data => setEmojis(data.data))
       }
